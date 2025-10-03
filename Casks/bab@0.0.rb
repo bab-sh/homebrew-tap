@@ -3,7 +3,7 @@ cask "bab@0.0" do
   name "bab@0.0"
   desc "Bab CLI - A simple task runner (version 0.0.x)"
   homepage "https://github.com/bab-sh/bab"
-  version "0.0.1"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "bab@0.0" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/#{version}/bab_Darwin_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "39630f8c058e43e654435bae9922b695531db07690690cb099418cf771bde161"
+      sha256 "57e620a927a8070a89f9bba889ffe3594fd992031b435a28dfef88b1282f68ee"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/#{version}/bab_Darwin_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "28e1c7f74efa4c2eb09fa34681c7d68209d8204da1e0404ad2c4ab6cecea341e"
+      sha256 "c3acd68f672a85e829948f2c991cf0e1005d1aba2806943579fd13050b1e9587"
     end
   end
 
@@ -28,12 +28,12 @@ cask "bab@0.0" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/#{version}/bab_Linux_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "d5e6f02a0ce9b835472aa28f217f81b10d664a6cedf607cfb9439bdca9e3443c"
+      sha256 "4d66b11cbee4b7e498e0479cf654965a9eeb0da9c7aa0dfabda2c3450d1d6f06"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/#{version}/bab_Linux_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "b76cd322aec1a2208ab278c16c9660831bc750d92c604daa08753bffa1d8d5c0"
+      sha256 "9c28138cbc8d43cbbb278f870329999f5f0c296fe48bc131b5fd60891ce490dd"
     end
   end
 
