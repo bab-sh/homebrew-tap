@@ -15,12 +15,12 @@ cask "bab" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_Darwin_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "de7f4d58e61da13e01ae3b45b749c6c6518cbde2ddadd8e62350fbfbfcc1aa6d"
+      sha256 "82e475de8fda719b4df426896a834d23babe2faae3c02d22945754eff4ed9c01"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_Darwin_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "b9296b5f05953a10a6e48b40a1111ba0ea1a47dd3db5f270be5cbbc605e219f7"
+      sha256 "aabbc388003f1c4120aa266b7ebb493ca23fb7ce3f1ef8be64011854614ebd62"
     end
   end
 
@@ -28,12 +28,12 @@ cask "bab" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_Linux_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "6c477169c6069c84467e2a56df120a7b79bad5c142cc5a4253ab8930ea92aed0"
+      sha256 "3e4a65113db245fe5c8c472fc13a3a4abecc5675440e80b574d796b61d1c3c35"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_Linux_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "c0f4c06f82930de4ab1a763617aab6bc416b94690cf537743287c7cdb5527e98"
+      sha256 "27d167b97e8388caad9c6ea37ef92ffec3d67ae6e0ea6106379544f45f869c14"
     end
   end
 
