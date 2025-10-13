@@ -11,7 +11,7 @@ class Bab < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bab-sh/bab/releases/download/v0.0.9/bab_0.0.9_macOS_x86_64.tar.gz"
-      sha256 "65e52d6ceab2e58a011f2fe33a3bbd1acd972072112c94d15ffe385aa52795cc"
+      sha256 "e7189b4bb61af809614a19aa2a433b928c0693cf358fa5bb2c95b49fae39746b"
 
       def install
         bin.install "bab"
@@ -22,7 +22,7 @@ class Bab < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bab-sh/bab/releases/download/v0.0.9/bab_0.0.9_macOS_arm64.tar.gz"
-      sha256 "84aea9c390abd924261305b8cacef4d7f48f1c518edd4421731057c2b30843fa"
+      sha256 "94a5bf6461c6e0fad76ad0efd995b658a56f47369aa40827d5c059af78f9f73f"
 
       def install
         bin.install "bab"
@@ -36,7 +36,7 @@ class Bab < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bab-sh/bab/releases/download/v0.0.9/bab_0.0.9_Linux_x86_64.tar.gz"
-      sha256 "010451105c9f5499ac79b5e69670ddbada349f040ee4ccb684d221c9bce90396"
+      sha256 "d7056c30adec4ff84299a973d46d3a143d902bbe314bcd69c4f8778027452ed7"
       def install
         bin.install "bab"
         bash_completion.install "completions/bab.bash" => "bab"
@@ -46,7 +46,7 @@ class Bab < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bab-sh/bab/releases/download/v0.0.9/bab_0.0.9_Linux_arm64.tar.gz"
-      sha256 "fea0b4cbb1b91ac1e540ee3b5145a2492ea0afc8c539f4f18794bbdafca04c2c"
+      sha256 "f9157ce012e18d67f56079eddbe70867a52699c3eb047a25f834a4a702a4bd30"
       def install
         bin.install "bab"
         bash_completion.install "completions/bab.bash" => "bab"
