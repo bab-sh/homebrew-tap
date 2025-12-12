@@ -5,13 +5,13 @@
 class Bab < Formula
   desc "Custom commands for every project"
   homepage "https://github.com/bab-sh/bab"
-  version "0.3.13"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bab-sh/bab/releases/download/v0.3.13/bab_0.3.13_macOS_x86_64.tar.gz"
-      sha256 "49f763ee4b2895011f6e50188abb8691b82383cd8defcaa065ac585e125ec7f2"
+      url "https://github.com/bab-sh/bab/releases/download/v0.4.0/bab_0.4.0_macOS_x86_64.tar.gz"
+      sha256 "5c4be54082659e63d5f6efa2fb2a957cde441412fe2a21ad5085ff764861ba22"
 
       def install
         bin.install "bab"
@@ -21,8 +21,8 @@ class Bab < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bab-sh/bab/releases/download/v0.3.13/bab_0.3.13_macOS_arm64.tar.gz"
-      sha256 "5d8b112a3ad842ee22fb3556c3259beb171d077b35ad35e539845e8240b59b29"
+      url "https://github.com/bab-sh/bab/releases/download/v0.4.0/bab_0.4.0_macOS_arm64.tar.gz"
+      sha256 "fc43af3ffa9d543bc368b895b307ab50d9a247a5e35e3f4e0082340417a3e1cb"
 
       def install
         bin.install "bab"
@@ -35,8 +35,8 @@ class Bab < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bab-sh/bab/releases/download/v0.3.13/bab_0.3.13_Linux_x86_64.tar.gz"
-      sha256 "c2a734249707b889613f334ba36b085c2d3778428874946677d73bc4969eb688"
+      url "https://github.com/bab-sh/bab/releases/download/v0.4.0/bab_0.4.0_Linux_x86_64.tar.gz"
+      sha256 "0eeba9b70e49b32a60d784615ccfd0772f7b612133cd2de4f0edb4ba5dae5a2e"
       def install
         bin.install "bab"
         bash_completion.install "completions/bab.bash" => "bab"
@@ -45,8 +45,8 @@ class Bab < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bab-sh/bab/releases/download/v0.3.13/bab_0.3.13_Linux_arm64.tar.gz"
-      sha256 "1c4b8599462195c15a6b9cbab0bd2393a3c5bfcd8dd14e8faf83691ea172f2e8"
+      url "https://github.com/bab-sh/bab/releases/download/v0.4.0/bab_0.4.0_Linux_arm64.tar.gz"
+      sha256 "3c1d48ca4076ae2fc6d644db01d8b8eb6a98e2e7b79393faaaf44c097302d0ef"
       def install
         bin.install "bab"
         bash_completion.install "completions/bab.bash" => "bab"
