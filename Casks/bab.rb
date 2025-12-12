@@ -3,7 +3,7 @@ cask "bab" do
   name "bab"
   desc "Custom commands for every project"
   homepage "https://github.com/bab-sh/bab"
-  version "0.3.13"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,12 +18,12 @@ cask "bab" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_macOS_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "49f763ee4b2895011f6e50188abb8691b82383cd8defcaa065ac585e125ec7f2"
+      sha256 "5c4be54082659e63d5f6efa2fb2a957cde441412fe2a21ad5085ff764861ba22"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_macOS_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "5d8b112a3ad842ee22fb3556c3259beb171d077b35ad35e539845e8240b59b29"
+      sha256 "fc43af3ffa9d543bc368b895b307ab50d9a247a5e35e3f4e0082340417a3e1cb"
     end
   end
 
@@ -31,12 +31,12 @@ cask "bab" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "c2a734249707b889613f334ba36b085c2d3778428874946677d73bc4969eb688"
+      sha256 "0eeba9b70e49b32a60d784615ccfd0772f7b612133cd2de4f0edb4ba5dae5a2e"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "1c4b8599462195c15a6b9cbab0bd2393a3c5bfcd8dd14e8faf83691ea172f2e8"
+      sha256 "3c1d48ca4076ae2fc6d644db01d8b8eb6a98e2e7b79393faaaf44c097302d0ef"
     end
   end
 
