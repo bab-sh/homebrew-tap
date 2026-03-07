@@ -5,13 +5,13 @@
 class Bab < Formula
   desc "Task runner for defining project commands in YAML"
   homepage "https://github.com/bab-sh/bab"
-  version "0.7.5"
+  version "0.7.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bab-sh/bab/releases/download/v0.7.5/bab_0.7.5_macOS_x86_64.tar.gz"
-      sha256 "c3c5e909fb798f32a4e346c6cf1460f6f83a28894dfe4d95338ae8964ed32260"
+      url "https://github.com/bab-sh/bab/releases/download/v0.7.6/bab_0.7.6_macOS_x86_64.tar.gz"
+      sha256 "f2f1f4b82ab5a6e742d44d15371e499d6b15adeddf0de7b9dd78c7f5f50beb69"
 
       define_method(:install) do
         bin.install "bab"
@@ -21,8 +21,8 @@ class Bab < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bab-sh/bab/releases/download/v0.7.5/bab_0.7.5_macOS_arm64.tar.gz"
-      sha256 "bf434ea53c0df4165ba4c26ac6a796f852320f5cdcc83c21a124543a4096746c"
+      url "https://github.com/bab-sh/bab/releases/download/v0.7.6/bab_0.7.6_macOS_arm64.tar.gz"
+      sha256 "dd078413a5043b55df1ce6f312d6101c812a8391a2609855c2173310c355483c"
 
       define_method(:install) do
         bin.install "bab"
@@ -35,8 +35,8 @@ class Bab < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bab-sh/bab/releases/download/v0.7.5/bab_0.7.5_Linux_x86_64.tar.gz"
-      sha256 "4c36dea6ae1006e6a80b18879c58dbdf8b60fdeb71a29e69e1e502f679d3068f"
+      url "https://github.com/bab-sh/bab/releases/download/v0.7.6/bab_0.7.6_Linux_x86_64.tar.gz"
+      sha256 "19296eb7ff3c5eb67b2789a87dc05901dee571b69a27bb7a855035eaef4b5d16"
       define_method(:install) do
         bin.install "bab"
         bash_completion.install "completions/bab.bash" => "bab"
@@ -45,8 +45,8 @@ class Bab < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bab-sh/bab/releases/download/v0.7.5/bab_0.7.5_Linux_arm64.tar.gz"
-      sha256 "54e59e45ef59bef812df298f61874738df5dba91d6e40b5c0bc44afa0ab49591"
+      url "https://github.com/bab-sh/bab/releases/download/v0.7.6/bab_0.7.6_Linux_arm64.tar.gz"
+      sha256 "11007a75da3894d5b9fe0e168d77b0ee4a1c0b894d90ad085a8255f7f493371f"
       define_method(:install) do
         bin.install "bab"
         bash_completion.install "completions/bab.bash" => "bab"
