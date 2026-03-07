@@ -3,7 +3,7 @@ cask "bab@0.7" do
   name "bab@0.7"
   desc "Task runner for defining project commands in YAML (v0.7.x)"
   homepage "https://github.com/bab-sh/bab"
-  version "0.7.7"
+  version "0.7.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,12 +18,12 @@ cask "bab@0.7" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_macOS_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "58d0a9c8e9547c8aba289f08b44cf2658e7b3b8089a2ed483228a4b56a8de2d6"
+      sha256 "5dda683aed9412204372e6f58e6f7b19ac62807fc4b3d7225525677ba546df7a"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_macOS_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "5d4b1b1012160a4bd221aa8166fe181117fcfb453a9e6a180bd9b1beba2a49c6"
+      sha256 "9b6c1723cddb35a70630ff007775751cedbec69d6b4f622343a3d887183a47dc"
     end
   end
 
@@ -31,12 +31,12 @@ cask "bab@0.7" do
     on_intel do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "9ff6c013da4cad1f3f4e7622dfb5b95b0bb243d73d6e30eec24d05ab3b41386a"
+      sha256 "4d95f6ea1c9a1a59d9b0ae29b1a11bf17e568bbcc5ea98191e530a26c2bb771b"
     end
     on_arm do
       url "https://github.com/bab-sh/bab/releases/download/v#{version}/bab_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/bab-sh/bab"
-      sha256 "1b621582d2f52a67c0bad9dfaacca0e239f99cb9b8313a3b1c0e082b7413fb20"
+      sha256 "b5876dcf23f751da6645552c8512df90a33aabe60911b1da56de02c829cf8636"
     end
   end
 
